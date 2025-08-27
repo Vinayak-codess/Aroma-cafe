@@ -8,7 +8,8 @@ body{
 
 .header{
     margin-top: 0;
-    height: 50px;
+    font-size: 1.5rem;
+    height: 10vh;
     background-color:#634832;
     text-align: center;
 }
@@ -28,19 +29,19 @@ h1{
 
 .option-item{
     background-color: #634832;
-    height: 23vh;
+    height: auto;
     border-radius: 5%;
 }
 
 .option-container{
     display: grid;
-    gap: 9px;
-    grid-template-columns:  23vh 23vh 23vh 25vh;
+    gap: 7px;
+    grid-template-columns:  23vw 23vw 23vw 25vw;
 }
 
 .brew-item{
     background-color: #634832;
-    height: 23vh;
+    height: auto;
     border-radius: 5%;
 }
 
@@ -51,7 +52,7 @@ h1{
 .brew-container{
     display: grid;
     gap: 9px;
-    grid-template-columns:  31vh 31vh 31vh;
+    grid-template-columns:  31vw 31vw 31vw;
 }
 
 .learn{
@@ -81,3 +82,32 @@ h1{
     transform: translateY(-1vh);
 }
 
+.video{
+    height: 95vh;
+    width: 95vw;
+}
+
+@media (max-width: 500px){
+
+.option-container{
+    display: grid;
+    gap: 4vh;
+    grid-template-columns: 70vw;
+}
+
+.brew-item{
+    background-color: #634832;
+    height: auto;
+    border-radius: 5%;
+}
+    .brew-container{
+    display: grid;
+    gap: 4vh;
+    grid-template-columns:  70vw;
+}
+
+.header{
+    font-size: 1rem;
+}
+
+}
